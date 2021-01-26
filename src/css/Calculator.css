@@ -1,0 +1,113 @@
+:root {
+  --first-color: #e4dede;
+  --second-color: #f7ede5ea;
+  --third-color-a: #eb9f48;
+  --third-color-b: #ee942d;
+  --fourth-color-a: #a3a3a3;
+  --fourth-color-b: #8f8f8f;
+  --fifth-color-a: #e2dbdb;
+  --fifth-color-b: #d4cfcf;
+  --sixth-color: #333333;
+  --seventh-color: #bbc9b2;
+  --shadow: 6px 6px 9px #6e6c68ab, -6px -6px 60px #fff;
+  --shadow-inset: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
+  --shadow-text: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
+}
+
+.calculator {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 300px;
+  padding: 3rem;
+  border-radius: 30px;
+  background-color: var(--second-color);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="text"] {
+  -moz-appearance: textfield;
+} */
+
+input {
+  width: 230px;
+  height: 65px;
+  padding: 4px 32px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--sixth-color);
+  text-shadow: var(--shadow-text);
+  text-align: right;
+  box-shadow: var(--shadow-inset);
+  background-color: var(--seventh-color);
+  border: 3px solid var(--third-color-a);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  grid-gap: 0.8rem;
+  margin-top: 20px;
+}
+
+button {
+  outline: none;
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.op-key,
+.op-key-span {
+  background: linear-gradient(145deg, #aeadae, #939293);
+}
+
+.op-key:active,
+.op-key-span:active {
+  box-shadow: var(--shadow-inset);
+  background: var(--fourth-color-b);
+}
+
+.op-key-span {
+  width: 145px;
+  grid-column: span 2;
+}
+.op-key-pemdas,
+.eq-key {
+  color: var(--second-color);
+  background: linear-gradient(145deg, #faab4c, #d39040);
+}
+
+.op-key-pemdas:active,
+.eq-key:active {
+  box-shadow: var(--shadow-inset);
+  background: var(--third-color-b);
+}
+
+.num-key,
+.num-key-span {
+  color: var(--sixth-color);
+  background: linear-gradient(145deg, #f1e9ea, #cbc4c5);
+}
+
+.num-key-span {
+  width: 145px;
+  grid-column: span 2;
+}
+
+.num-key:active,
+.num-key-span:active {
+  box-shadow: var(--shadow-inset);
+  background: var(--fifth-color-b);
+}

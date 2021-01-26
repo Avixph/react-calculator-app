@@ -1,7 +1,23 @@
+:root {
+  --first-color: #e4dede;
+  --second-color: #f7ede5ea;
+  --third-color-a: #eb9f48;
+  --third-color-b: #ee942d;
+  --fourth-color-a: #a3a3a3;
+  --fourth-color-b: #8f8f8f;
+  --fifth-color-a: #e2dbdb;
+  --fifth-color-b: #d4cfcf;
+  --sixth-color: #333333;
+  --seventh-color: #bbc9b2;
+  --shadow: 6px 6px 9px #6e6c68ab, -6px -6px 60px #fff;
+  --shadow-inset: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
+  --shadow-text: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
+}
+
 .App {
   text-align: center;
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +51,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
